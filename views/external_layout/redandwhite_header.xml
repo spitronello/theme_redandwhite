@@ -3,8 +3,9 @@
 <data>
 <!-- Esta vista sobreescribe la vista de header que utilizan los informes de Odoo para meter la
 personalizada para powerworks sin lineas y con el logo grande -->
-<template id="report_header_power" inherit_id="report.external_layout_header"> 
-            <xpath expr="//div[@class='header']" position="replace">
+<template id="redandwhite_header" inherit_id="website.layout" name="Red and White theme header">
+            <!-- Asignar un id -->
+            <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
                 <div class ="header">
          <div class="row">
      			 	<div class="col-xs-3">
