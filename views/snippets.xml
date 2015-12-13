@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<template id="snippet-cards" name="Cards snippet">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="snippet-cards card-left">
+          <img class="card-img" alt="client" src="/theme_redandwhite/static/src/img/facebook-icon.png"/>
+          <h3>Client Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+        <div class="col-md-6">
+        <div class="snippet-cards card-right">
+          <img class="card-img" alt="client" src="/theme_redandwhite/static/src/img/facebook-icon.png"/>
+          <h3>Client Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+</template>
+<!-- Place the snippet inside the editor bar -->
+<template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+  <xpath expr="//div[@id='snippet_structure']" position="inside">
+    <t t-snippet="theme_redandwhite.snippet-cards"
+       t-thumbnail="/theme_redandwhite/static/src/img/facebook-icon.png"/>
+  </xpath>
+</template>
+</data>
+</openerp>

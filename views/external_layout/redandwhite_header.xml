@@ -3,15 +3,17 @@
 <data>
 <!-- Esta vista sobreescribe la vista de header que utilizan los informes de Odoo para meter la
 personalizada para powerworks sin lineas y con el logo grande -->
-<template id="redandwhite_header" inherit_id="website.layout" name="Red and White theme header">
+<template id="redandwhite_header" inherit_id="website.layout" name="Red and White contact header">
             <!-- Asignar un id -->
-            <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-                <div class ="header">
-         <div class="row">
-     			 	<div class="col-xs-3">
-      			 		<img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 100px;"/>
-      				</div>
-    			</div>
+            <xpath expr="//ul[@id='top_menu']" position="before">
+                <div id="top_contact" class="nav navbar-nav navbar-right">
+                  <div id="social_top" class="social_buttons">
+                    <img src="/theme_redandwhite/static/src/img/facebook-icon.png" />
+                    <img src="/theme_redandwhite/static/src/img/social_twitter_button_blue.png" />
+                    <img src="/theme_redandwhite/static/src/img/linkedin.png" />
+                  </div>
+                  <div id="tel_top" class="telephone">Tel. <span t-field="res_company.phone"/></div>
+
                 </div>
             </xpath>
  </template>

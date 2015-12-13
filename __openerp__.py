@@ -31,6 +31,13 @@
         "website",
         'website_less',
     ],
+  'data': [
+    'views/assets.xml',
+    'views/external_layout/redandwhite_header.xml',
+    'views/external_layout/redandwhite_footer.xml',
+    'views/snippets.xml',
+  ],
+  'category': 'Theme/Creative',
 
     "installable": True,
     "application": True,
