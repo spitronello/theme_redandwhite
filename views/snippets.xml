@@ -18,7 +18,7 @@
 
         <div class="col-md-6">
         <div class="snippet-cards card-right">
-          <img class="card-img" alt="client" src="/theme_redandwhite/static/src/img/china_thumb.jpg"/>
+          <img class="card-img" alt="client" src="/website/static/src/img/china_thumb.jpg"/>
           <h3>Fancy header</h3>
           <p>Place some text here, make your product or service pop out with it and be sure to explain
              the benefits of working with your powerful solution. This text is intentionally longer than
