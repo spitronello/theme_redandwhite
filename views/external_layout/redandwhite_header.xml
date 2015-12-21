@@ -8,9 +8,26 @@ personalizada para powerworks sin lineas y con el logo grande -->
             <xpath expr="//ul[@id='top_menu']" position="before">
                 <div id="top_contact" class="nav navbar-nav navbar-right">
                   <div id="social_top" class="social_buttons">
-                    <img src="/theme_redandwhite/static/src/img/facebook-icon.png" />
-                    <img src="/theme_redandwhite/static/src/img/social_twitter_button_blue.png" />
-                    <img src="/theme_redandwhite/static/src/img/linkedin.png" />
+
+                      <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                        <i class="fa fa-facebook-square"/>
+                      </a>
+                      <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                        <span data-cke-widget-id="2" tabindex="-1" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline" data-cke-display-name="i"/>
+                      </a>
+                      <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                        <i class="fa fa-linkedin"/>
+                      </a>
+                      <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                        <i class="fa fa-youtube-play"/>
+                      </a>
+                      <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                        <i class="fa fa-google-plus-square"/>
+                      </a>
+                      <a t-att-href="website.social_github" t-if="website.social_github">
+                        <i class="fa fa-github"/>
+                      </a>
+                    
                   </div>
                   <div id="tel_top" class="telephone">Tel. <span t-field="res_company.phone"/></div>
 
